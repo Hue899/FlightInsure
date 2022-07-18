@@ -1,10 +1,22 @@
-# FlightSurety
+# FlightInsure
 
-FlightSurety is a sample application project for Udacity's Blockchain Nanodegree Program.
+FlightInsure is a dAPP with Smart Contract code written in Solidity via Truffle. Both dApp and server were scaffolded using HTML, CSS and JavaScript. 
+Smart Contract code is separated into multiple contracts:
+
+1) FlightSuretyData.sol for data persistence
+2) FlightSuretyApp.sol for app logic and oracles code
+
+## Versions
+
+* Truffle v5.5.22
+* Solidity v0.8.15 (solc-js)
+* Web3 v1.7.4
+* @openzeppelin/test-helpers v0.5.15
+* truffle-hdwallet-provider v1.0.17
+* Node v16.16.0
 
 ## Install
 
-This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle), dApp scaffolding (using HTML, CSS and JS) and server app scaffolding.
 
 To install, download or clone the repo, then:
 
@@ -50,116 +62,6 @@ Deploy the contents of the ./dapp folder
 * [Solidity Language Reference](http://solidity.readthedocs.io/en/v0.4.24/)
 * [Ethereum Blockchain Explorer](https://etherscan.io/)
 * [Web3Js Reference](https://github.com/ethereum/wiki/wiki/JavaScript-API)
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-Please make sure you've already installed Truffle and enabled the MetaMask extension in your browser.
-
-### Installing
-
-Clone the https://github.com/udacity/FlightSurety repository and install all requisite npm packages (as listed in ```package.json```):
-
-```
-npm install
-```
-
-Launch Truffle development environment:
-
-```
-truffle develop
-```
-Your terminal should look something like this:
-
-![compile](images/truffle_develop.png)
-
-Compile contracts
-
-```
-compile
-```
-
-Your terminal should look something like this:
-
-![compile](images/truffle_compile.png)
-
-This will create the smart contract artifacts in folder ```build/contracts```.
-
-Migrate smart contracts to the locally running blockchain:
-
-```
-migrate
-```
-
-Your terminal should look something like this:
-
-![truffle migrate](images/truffle_migrate.png)
-
-Test smart contracts:migrate
-
-```
-test
-```
-
-All 8 tests should pass.
-
-![truffle test](images/truffle_test1.png)
-![truffle test](images/truffle_test2.png)
-
-In separate terminal windows, launch the server and the DApp:
-
-```
-npm run server
-```
-Your terminal should look something like this:
-
-![npm run server](images/npm_run_server.png)
-
-
-In other window 
-```
-npm run dapp
-```
-Your terminal should look something like this:
-
-![npm run dapp](images/npm_run_dapp.png)
-
-## Testing the DApp in the browser
-
-* Go to [http://localhost:8000/](http://localhost:8000/) to open the DApp in the browser:
-
-![DApp](images/dapp.png)
-
-The first transaction is for authorizing the FlightSureryApp contract to access the FlightSuretyData contract.
-
-
-* Use the accounts' private keys to import accounts in metamask. Now connect to the Contract Owner account and register airlines:
-![DApp](images/register_airlines.png)
-
-
-* Now select a registered airline account in MetaMask and fund the seed insurance amount:
-![DApp](images/funding.png)
-![DApp](images/funding2.png)
-
-* Select a passenger account and buy insurance, submit to oracles and if flight status is delayed (20 or 40) you can request insurance credit.
-![DApp](images/buy_insurance.png)
-![DApp](images/submit_to_oracles.png)
-
-* Get insurance credit when flight is delayed
-![DApp](images/request_credit.png)
-
-## Versions
-
-* Truffle v5.5.22
-* Solidity v0.8.15 (solc-js)
-* Web3 v1.7.4
-* @openzeppelin/test-helpers v0.5.15
-* truffle-hdwallet-provider v1.0.17
-* Node v16.16.0
 
 ## License
 
