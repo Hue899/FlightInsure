@@ -62,7 +62,7 @@ Please make sure you've already installed Truffle and enabled the MetaMask exten
 
 ### Installing
 
-Clone this repository and install all requisite npm packages (as listed in ```package.json```):
+Clone the https://github.com/udacity/FlightSurety repository and install all requisite npm packages (as listed in ```package.json```):
 
 ```
 npm install
