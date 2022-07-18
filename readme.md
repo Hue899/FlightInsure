@@ -1,6 +1,7 @@
 # FlightInsure
 
 FlightInsure is a dAPP with Smart Contract code written in Solidity via Truffle. Both dApp and server were scaffolded using HTML, CSS and JavaScript. 
+
 Smart Contract code is separated into multiple contracts:
 
 1) FlightSuretyData.sol for data persistence
